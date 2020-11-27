@@ -1,0 +1,28 @@
+﻿@model LoginViewModel;
+
+<form id="loginForm" method="post" action="Login">
+    <h1>Sign Up</h1>
+
+    <label>
+        Username
+        <input name="username" required placeholder="e.g. johndoe" value="@Model.UserName" />
+    </label>
+
+    <label for="password"> Password </label>
+    <input id="password"
+           name="password"
+           type="password"
+           required
+           placeholder="e.g. !FooBar42" />
+
+    <label for="confirmPassword"> Confirm Password </label>
+    <input id="confirmPassword"
+           type="password"
+           required
+           placeholder="e.g. !FooBar42" />
+
+    <label for="date">Enter a date</label>
+    <input id="date" name="date" type="datetime-local" />
+
+    <button id="submit" class="btn-primary">Submit</button>
+</form>
